@@ -5,7 +5,8 @@ const cors = require('cors')
 
 const token = '7258701539:AAH8sWLMYyuPB4-Roq2KG9b-GTmB7ouRFpc' // todo унеси в .env потом
 const bot = new telegramAPI(token, {polling: true});
-const webAppUrl = 'https://066b-188-125-171-174.ngrok-free.app'
+const webAppUrl = 'https://c011-188-125-171-174.ngrok-free.app'
+
 
 const app = express()
 
@@ -70,6 +71,16 @@ app.post('/cart', async(req, res)=>{
     console.log(err)
     return res.status(500)
   }  
+})
+
+
+app.get('/cart', async(req, res)=>{
+  try {
+    return res.status(200).json({message: 'get-запрос отрабатывает, все супер, ура!'})
+  } catch(err) {
+    console.log(err)
+    return res.status(500)
+  }
 })
 
 
