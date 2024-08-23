@@ -5,8 +5,8 @@ const cors = require('cors')
 
 const token = '7258701539:AAH8sWLMYyuPB4-Roq2KG9b-GTmB7ouRFpc' // todo унеси в .env потом
 const bot = new telegramAPI(token, {polling: true});
-const webAppUrl = 'https://c011-188-125-171-174.ngrok-free.app'
-//const webAppUrl = 'https://master--creative-frangollo-24f40b.netlify.app/'
+//const webAppUrl = 'https://c011-188-125-171-174.ngrok-free.app'
+const webAppUrl = 'https://master--creative-frangollo-24f40b.netlify.app/'
 
 
 const app = express()
