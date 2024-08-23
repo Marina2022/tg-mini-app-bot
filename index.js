@@ -65,7 +65,7 @@ app.post('/cart', async(req, res)=>{
       title: 'Получилось!',
       input_message_content: {message_text: 'Ты просто нереальная молодца!'}
     } )
-    return res.status(200).json({})
+    return res.status(200).json({message: 'Все ОК, ты молодец!'})
   } catch(err) {
     console.log(err)
     return res.status(500)
